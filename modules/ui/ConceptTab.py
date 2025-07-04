@@ -25,10 +25,8 @@ class ConceptTab(ConfigList):
             attr_name="concept_file_name",
             config_dir="training_concepts",
             default_config_name="concepts.json",
-            add_button_text="Add Concept",
-            add_button_tooltip="Adds a new concept to the current config.",
+            add_button_text="add concept",
             is_full_width=False,
-            show_toggle_button=True
         )
 
     def create_widget(self, master, element, i, open_command, remove_command, clone_command, save_command):
@@ -142,7 +140,7 @@ class ConceptWidget(ctk.CTkFrame):
             (image.width - size) // 2 + size,
             (image.height - size) // 2 + size,
         ))
-        image = image.resize((150, 150), Image.Resampling.BILINEAR)
+        image = image.resize((150, 150), Image.Resampling.LANCZOS)
         return image
 
     def place_in_list(self):

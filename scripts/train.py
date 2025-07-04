@@ -1,6 +1,6 @@
-from util.import_util import script_imports
-
-script_imports()
+#from util.import_util import script_imports
+#
+#script_imports()
 
 import json
 

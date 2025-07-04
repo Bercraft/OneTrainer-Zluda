@@ -44,7 +44,7 @@ pytorch_optimizer==3.6.0 # pytorch optimizers
 prodigy-plus-schedule-free==1.9.2 # prodigy+schedulefree optimizer
 
 # Profiling
-scalene==1.5.51
+scalene
 
 # ui
 customtkinter==5.2.2
